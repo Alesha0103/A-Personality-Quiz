@@ -1,0 +1,58 @@
+h1 {
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 25vh auto 50px;
+  text-align: center;
+  font-family: "New Tegomin", serif;
+  color: #ca01b6;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.my-btn {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+
+  display: block;
+  width: 200px;
+  margin: 0 auto 150px;
+
+  font-size: 22px;
+  padding: 5px;
+
+  background-color: #ffffff;
+
+  border: none;
+  border-radius: 15px;
+  color: #ca01b6;
+  animation: btn-border 1.7s infinite linear;
+}
+.my-btn:hover {
+  animation-play-state: paused;
+}
+
+@keyframes btn-border {
+  0% {
+    box-shadow: 0 0 10px 0 #ca01b6 inset, 0 0 10px 4px #ca01b6;
+  }
+  50% {
+    box-shadow: 0 0 10px 2px #ff02e6ad inset, 0 0 10px 13px #e200cb95;
+    color: #e200cb95;
+  }
+  100% {
+    box-shadow: 0 0 10px 0 #ca01b6 inset, 0 0 10px 4px #ca01b6;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+    margin: 5vh auto;
+  }
+  .my-btn {
+    width: 100px;
+    font-size: 18px;
+  }
+}
